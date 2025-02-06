@@ -5,11 +5,11 @@ JSSS-Find 是一款用于自动化提取JS文件、API接口测试以及暴露�
 
 ## 功能 ![Features Icon](https://img.shields.io/badge/Features-✔️-green)
 
-- **JS文件提取**：从网页内容中自动提取JS文件链接。
-- **接口路径提取**：支持精简和全量接口路径的提取，自动化识别JS中的路由。
+- **JS文件提取**：从网页内容中自动提取JS文件链接(适用Webpack框架)。
+- **接口路径提取**：支持精简和全量接口路径的提取，自动化识别JS中的接口路由。
 - **敏感信息提取**：提取JS文件中的敏感信息，如API密钥、JWT令牌、数据库凭证等。
-- **Fuzz测试**：对提取的接口路径进行fuzz测试，发现潜在的漏洞。
-- **漏洞检测**：通过预设规则检测常见漏洞，如Spring Actuator、Swagger未授权等。
+- **Fuzz测试**：对提取的接口路径进行fuzz测试、403bypass，发现潜在的漏洞。
+- **漏洞检测**：通过规则检测每个接口的常见漏洞，如Spring Actuator、Swagger未授权等。
 - **Vue接口检测**：在真实浏览器环境下测试Vue接口的状态码和标题。
 
 
@@ -24,8 +24,8 @@ JSSS-Find.exe -u <URL> [-fuzz] [-v] [-vueBrowser]
 ```
 
 - `-u <URL>`: 指定需要提取JS文件和进行测试的URL。
-- `-fuzz`: 启用fuzz测试，对提取的接口路径进行安全测试。
-- `-v`: 启用漏洞检测模式，检测常见漏洞。
+- `-fuzz`: 启用fuzz测试。
+- `-v`: 启用漏洞检测模式，速度较慢。
 - `-vueBrowser`: 在真实浏览器环境中访问Vue接口。
 
 #### 读取本地JS文件目录 📂
@@ -36,12 +36,12 @@ JSSS-Find.exe -f <本地JS目录> [-fuzz] [-v] [-vueBrowser]
 
 - `-f <本地JS目录>`: 指定本地目录，工具会自动分析该目录下的所有JS文件。
 
-### 2. 通过Cookie和Header进行定制化请求 🍪
+### 2. 通过Cookie和Header进行请求 🍪
 
 #### 设置自定义的Cookie和Headers 🔑
 
 ```bash
-JSSS-Find.exe -u <URL> -cookie "SESSIONID=abcd; token=xxx" -header "X-Token:abc;User-Agent:MyUA"
+JSSS-Find.exe -u <URL> -cookie "SESSIONID=abcd" -header "Token:abc;User-Agent:MyUA"
 ```
 
 - `-cookie`: 设置自定义Cookie。
