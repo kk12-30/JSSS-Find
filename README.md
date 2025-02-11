@@ -41,10 +41,11 @@ JSSS-Find.exe -u <URL> [-fuzz] [-v] [-vueBrowser]
 #### 读取本地JS文件目录 📂
 
 ```bash
-JSSS-Find.exe -f <本地JS目录> [-fuzz] [-v] [-vueBrowser]
+JSSS-Find.exe -f <本地需要读取的JS目录> [-fuzz] [-v] [-vueBrowser]
 ```
 
 - `-f <本地JS目录>`: 指定本地目录，工具会自动分析该目录下的所有JS文件。
+- `可联动Packer-Fuzzer工具获取的js  在工具下载的js在tmp文件夹中`
 
 ### 2. 通过Cookie和Header进行请求 🍪
 
