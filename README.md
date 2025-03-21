@@ -8,7 +8,7 @@ JSSS-Find 是一款用于自动化提取JS文件、API接口测试以及暴露�
 
 ✅提取JS
 ![](https://github.com/kk12-30/JSSS-Find/blob/main/image.png)
-✅fuzz测试
+✅fuzz测试，支持深度fuzz，自动构造接口
 ![](https://github.com/kk12-30/JSSS-Find/blob/main/2.png)
 ✅漏洞检测
 ![](https://github.com/kk12-30/JSSS-Find/blob/main/3.png)
@@ -16,6 +16,8 @@ JSSS-Find 是一款用于自动化提取JS文件、API接口测试以及暴露�
 ![](https://github.com/kk12-30/JSSS-Find/blob/main/4.png)
 ✅结果保存到本地文件
 ![](https://github.com/kk12-30/JSSS-Find/blob/main/1.png)
+✅报告生成
+![](https://github.com/kk12-30/JSSS-Find/blob/main/5.png)
 
 ## 功能 ![Features Icon](https://img.shields.io/badge/Features-✔️-green)
 
