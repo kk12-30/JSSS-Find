@@ -41,6 +41,7 @@ JSSS-Find.exe -u <URL> [-fuzz] [-v] [-vueBrowser]
 
 - `-u <URL>`: 指定需要提取JS文件和进行测试的URL。
 - `-fuzz`: 启用fuzz测试。
+-  -m 使用深度fuzz模式
 - `-v`: 启用漏洞检测模式，速度较慢。
 - `-vueBrowser`: 在真实浏览器环境中访问Vue接口。
 
