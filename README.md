@@ -2,7 +2,7 @@
 
 ⚡⚡⚡内测版本已发布：https://mp.weixin.qq.com/s/wZO-s6_GJWIiJhnnK5Kbnw
 
-⚡已更新内测版本至3.1 https://mp.weixin.qq.com/s/PbirmQqWGa6wpouq8GJA7g
+⚡已更新内测版本至3.3 https://mp.weixin.qq.com/s/PbirmQqWGa6wpouq8GJA7g
 
 JSSS-Find 是一款用于自动化提取JS文件、API接口测试以及暴露端点检测的工具。通过访问指定URL，提取并分析JS文件中的接口、路径和敏感信息，帮助开发者发现潜在的安全漏洞。该工具支持对网站进行fuzz测试、漏洞检测、真实浏览器中访问Vue接口等功能。适用于安全研究人员和开发者进行漏洞检测与接口审计。
 
