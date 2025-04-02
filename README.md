@@ -15,7 +15,7 @@ JSSS-Find 是一款用于自动化提取JS文件、API接口测试以及暴露�
 ✅结果保存到本地文件
 ![](https://github.com/kk12-30/JSSS-Find/blob/main/1.png)
 ✅报告生成
-![](https://github.com/kk12-30/JSSS-Find/blob/main/5.png)
+![](https://github.com/kk12-30/JSSS-Find/blob/main/6.png)
 
 ## 功能 ![Features Icon](https://img.shields.io/badge/Features-✔️-green)
 
