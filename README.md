@@ -1,6 +1,7 @@
 # JSSS-Find: 自动化JS提取与漏洞检测工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 
 ⚡已更新内测版本至3.5  https://mp.weixin.qq.com/s/di583ERkAc1HFSpQDfk_mw
+
 更新记录
 
 V3.5.1：新增-t参数控制并发线程，不加参数默认50
