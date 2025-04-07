@@ -1,6 +1,16 @@
 # JSSS-Find: 自动化JS提取与漏洞检测工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 
 ⚡已更新内测版本至3.5  https://mp.weixin.qq.com/s/di583ERkAc1HFSpQDfk_mw
+更新记录
+
+V3.5.1：新增-t参数控制并发线程，不加参数默认50
+
+V3.5：支持批量URL扫描，优化报告模板
+
+V3.4：代码重构使用高并发线程
+
+V3.3：修复扫描https的IP地址时证书错误问题
+
 
 JSSS-Find 是一款用于自动化提取JS文件、API接口测试以及暴露端点检测的工具。通过访问指定URL，提取并分析JS文件中的接口、路径和敏感信息，帮助开发者发现潜在的安全漏洞。该工具支持对网站进行fuzz测试、漏洞检测、真实浏览器中访问Vue接口等功能。适用于安全研究人员和开发者进行漏洞检测与接口审计。
 
