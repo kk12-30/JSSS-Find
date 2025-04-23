@@ -1,6 +1,5 @@
 # JSSS-Find: 自动化JS提取与漏洞检测工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
-# 内测体验方式：
-![](https://github.com/kk12-30/JSSS-Find/blob/main/fenchuan.png)
+
 
 ⚡已更新内测版本至3.5  https://mp.weixin.qq.com/s/di583ERkAc1HFSpQDfk_mw
 
@@ -63,7 +62,8 @@ JSSS-Find.exe -u <URL> [-fuzz] [-v] [-vueBrowser]
 
 - `-u <URL>`: 指定需要提取JS文件和进行测试的URL。
 - `-fuzz`: 启用fuzz测试。
--  -m 使用深度fuzz模式
+-  -m 使用深度fuzz模式，构造大量请求参数进行fuzz（使用方式-fuzz -m）
+-  -bypass 会对401/403请求进行绕过测试
 - `-v`: 启用漏洞检测模式，速度较慢。
 - `-vueBrowser`: 在真实浏览器环境中访问Vue接口。
 
@@ -106,3 +106,6 @@ JSSS-Find.exe -u https://example.com -fuzz -v
 
 上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz测试，并检测常见漏洞。
 
+
+# 内测体验方式：
+![](https://github.com/kk12-30/JSSS-Find/blob/main/fenchuan.png)
