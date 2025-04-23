@@ -1,4 +1,6 @@
 # JSSS-Find: 自动化JS提取与漏洞检测工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
+# 内测体验方式：
+![](https://github.com/kk12-30/JSSS-Find/blob/main/fenchuan.png)
 
 ⚡已更新内测版本至3.5  https://mp.weixin.qq.com/s/di583ERkAc1HFSpQDfk_mw
 
