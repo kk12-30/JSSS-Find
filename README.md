@@ -105,12 +105,12 @@ JSSS-Find.exe -u <URL> -cookie "SESSIONID=abcd" -header "Token:abc;User-Agent:My
 ## 示例 ⚡
 
 ```bash
-JSSS-Find.exe -u https://example.com -fuzz
+JSSS-Find.exe -u https://example.com -fuzz -t 10
 ```
-上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz测试
+上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz测试、并发速率为10（过大并发可能导致系统崩溃、触发waf等后果）
 
 ```bash
-JSSS-Find.exe -u https://example.com -fuzz -m
+JSSS-Find.exe -u https://example.com -fuzz -m -t 10
 ```
 上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz深度测试
 
