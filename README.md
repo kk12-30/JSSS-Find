@@ -101,11 +101,44 @@ JSSS-Find.exe -u <URL> -cookie "SESSIONID=abcd" -header "Token:abc;User-Agent:My
 ## 示例 ⚡
 
 ```bash
-JSSS-Find.exe -u https://example.com -fuzz -v
+JSSS-Find.exe -u https://example.com -fuzz
 ```
+上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz测试
 
-上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz测试，并检测常见漏洞。
+```bash
+JSSS-Find.exe -u https://example.com -fuzz -m
+```
+上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz深度测试
 
+```bash
+JSSS-Find.exe -ai -clean -u https://example.com
+```
+上述命令会从 `https://example.com` 提取JS文件、进行AI分析
+
+```bash
+JSSS-Find.exe -u https://example.com -fuzz -bypss
+```
+上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz测试、对403/401请求进行bypass
+
+```bash
+JSSS-Find.exe -u https://example.com -vue
+```
+上述命令会从 `https://example.com` 提取JS文件、进行vue测试
+
+```bash
+JSSS-Find.exe -u https://example.com -v
+```
+上述命令会从 `https://example.com` 提取JS文件、进行漏洞测试
+
+```bash
+JSSS-Find-AI.exe -ai -clean -url https://example.com/ JS的具体路径
+```
+上述命令会从指定文件夹中分析JS
+
+```bash
+JSSS-Find-AI.exe -ai -fuzz -clean -url https://example.com/ JS的具体路径
+```
+上述命令会从指定文件夹中分析JS，并根据 `https://example.com` 构造请求
 
 # 内测体验方式：
 ![](https://github.com/kk12-30/JSSS-Find/blob/main/fenchuan.png)
