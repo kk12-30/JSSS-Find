@@ -5,6 +5,8 @@
 
 更新记录
 
+V3.7.1：优化bug
+
 V3.7.0：自定义fuzz规则：fuzz的配置信息fuzzconfig.yaml可自定义
 
 V3.6.3：修复fuzz报告的各种问题
