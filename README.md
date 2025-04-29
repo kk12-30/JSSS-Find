@@ -5,6 +5,8 @@
 
 更新记录
 
+V3.7.3：新增-api参数，自动获取basedir、修复fuzznum参数：批量检测时，每个URL的精简接口数量阈值，超过该值则只对前N个接口进行检测，0表示无限制
+
 V3.7.1：优化bug
 
 V3.7.0：自定义fuzz规则：fuzz的配置信息fuzzconfig.yaml可自定义
