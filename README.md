@@ -69,12 +69,13 @@ JSSS-Find 是一款用于自动化提取JS文件、API接口测试以及暴露�
 #### 访问URL提取JS文件 🌐
 
 ```bash
-JSSS-Find.exe -u <URL> [-fuzz] [-v] [-vueBrowser]
+JSSS-Find.exe -u <URL> [-fuzz] 
 ```
 
 - `-u <URL>`: 指定需要提取JS文件和进行测试的URL。
 - `-fuzz`: 启用fuzz测试。
 -  -m 使用深度fuzz模式，构造大量请求参数进行fuzz（使用方式-fuzz -m）
+-  -api 自动获取basedir（需存在路径文件C:\Program Files\Google\Chrome\Application\chrome.exe）
 -  -bypass 会对401/403请求进行绕过测试
 - `-v`: 启用漏洞检测模式，速度较慢。
 - `-vueBrowser`: 在真实浏览器环境中访问Vue接口。
