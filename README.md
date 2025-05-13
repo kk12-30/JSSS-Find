@@ -89,6 +89,8 @@ JSSS-Find.exe -f <本地需要读取的JS目录> [-fuzz] [-v] [-vueBrowser]
 
 - `-f <本地JS目录>`: 指定本地目录，工具会自动分析该目录下的所有JS文件。
 - `可联动Packer-Fuzzer工具获取的js  该工具下载的js在tmp文件夹中`
+- `读取小程序反编译后的JS，获取敏感信息和接口`
+
 
 ### 2. 通过Cookie和Header进行请求 🍪
 
