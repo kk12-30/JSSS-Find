@@ -1,7 +1,7 @@
 # JSSS-Find: 自动化JS提取与漏洞检测工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 
 
-⚡https://mp.weixin.qq.com/s/di583ERkAc1HFSpQDfk_mw
+⚡工具获取：https://pc.fenchuan8.com/#/index?forum=99314
 
 更新记录
 
