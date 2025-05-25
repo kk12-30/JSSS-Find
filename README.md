@@ -5,7 +5,7 @@
 
 更新记录
 
-V3.8.2：支持输入多个BaseDir进行测试，使用顿号隔离即可（例如：/api、/prod-api）
+V3.8.2：支持输入多个BaseDir进行fuzz测试，使用顿号隔离即可（例如：/api、/prod-api）
 
 V3.8.1：为了支持高度自定义，将敏感信息正则、JS前缀爆破字典全部放置在fuzzconfig.yaml配置文件中
 
