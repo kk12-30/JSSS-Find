@@ -9,7 +9,7 @@ V3.9.3：优化fuzz报告
 
 V3.9.2：修复还原sourcemap时出现的并发错误问题、将-v参数的路径漏洞扫描功能的规则放入到fuzzconfig.yaml中
 
-V3.9.0：支持Webpack反编译源码提取敏感信息等（js.map），需要安装sourcemap（npm install --global reverse-sourcemap）
+V3.9.0：支持Webpack反编译源码提取敏感信息等（js.map），需要安装sourcemap（安装命令：npm install --global reverse-sourcemap）
 
 V3.8.2：支持输入多个BaseDir进行fuzz测试，使用顿号隔离即可（例如：/api、/prod-api）
 
