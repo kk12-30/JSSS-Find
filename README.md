@@ -5,7 +5,7 @@
 
 更新记录
 
-V4.0(beta)
+V4.0：https://mp.weixin.qq.com/s/brZXggl989Kv3ywG_ZstxQ
 
 V3.9.9：bug修复
 
