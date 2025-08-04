@@ -5,6 +5,8 @@
 
 更新记录
 
+V5.0: 新增login多插件模式
+
 V4.0：https://mp.weixin.qq.com/s/brZXggl989Kv3ywG_ZstxQ
 
 V3.9.9：bug修复
