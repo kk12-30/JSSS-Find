@@ -1,4 +1,4 @@
-# JSSS-Find: 自动化JS提取与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
+![fa3cdaa3bc4891cef247d8bb6981a72](https://github.com/user-attachments/assets/2dcc6973-eb2c-42b4-8fe5-f4ae0f430ec2)# JSSS-Find: 自动化JS提取与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 
 
 ⚡工具获取：https://pc.fenchuan8.com/#/index?forum=99314
@@ -185,5 +185,5 @@ JSSS-Find-AI.exe -ai -fuzz -clean -url https://example.com/ JS的具体路径
 上述命令会从指定文件夹中分析JS，并根据 `https://example.com` 构造请求
 
 # 内测体验方式：
-![](https://github.com/kk12-30/JSSS-Find/blob/main/微信图片_20250806164635.png)
+![](https://github.com/kk12-30/JSSS-Find/blob/main/微信图片_20250806165104.png)
 ![](https://github.com/kk12-30/JSSS-Find/blob/main/fenchuan.png)
