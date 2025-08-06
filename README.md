@@ -6,9 +6,9 @@
 更新记录
 
 ```
-V5.0:  新增login多插件模式
+V5.0:  https://mp.weixin.qq.com/s/AVyjVG0PZfZ5n-Ddv__q1g
 
-V4.0： 全新login模式 https://mp.weixin.qq.com/s/brZXggl989Kv3ywG_ZstxQ
+V4.0： https://mp.weixin.qq.com/s/brZXggl989Kv3ywG_ZstxQ
 
 V3.9.9：bug修复
 
