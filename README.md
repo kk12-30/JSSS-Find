@@ -185,4 +185,5 @@ JSSS-Find-AI.exe -ai -fuzz -clean -url https://example.com/ JS的具体路径
 上述命令会从指定文件夹中分析JS，并根据 `https://example.com` 构造请求
 
 # 内测体验方式：
+![](https://github.com/kk12-30/JSSS-Find/blob/main/微信图片_20250806164635.png)
 ![](https://github.com/kk12-30/JSSS-Find/blob/main/fenchuan.png)
