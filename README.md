@@ -6,6 +6,8 @@
 更新记录
 
 ```
+V6.0:  新增了「AI智能分析模式」,直接用AI分析复杂JS逻辑,自动构造出完整JS文件路径，告别手动拼接
+
 V5.0:  https://mp.weixin.qq.com/s/AVyjVG0PZfZ5n-Ddv__q1g
 
 V4.0： https://mp.weixin.qq.com/s/brZXggl989Kv3ywG_ZstxQ
