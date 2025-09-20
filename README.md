@@ -1,4 +1,4 @@
-# JSSS-Find: 自动化JS提取与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
+# JSSS-Findv6.2: 自动化JS提取与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 
 
 ⚡工具获取：https://pc.fenchuan8.com/#/index?forum=99314
@@ -16,53 +16,6 @@ V5.0:  https://mp.weixin.qq.com/s/AVyjVG0PZfZ5n-Ddv__q1g
 
 V4.0： https://mp.weixin.qq.com/s/brZXggl989Kv3ywG_ZstxQ
 
-V3.9.9：bug修复
-
-V3.9.8：优化fuzz报告使用本地静态资源，加快加载速度
-
-V3.9.7：修复过滤重复响应的bug、新增-danger参数用于过滤危险接口
-
-V3.9.6：修复过滤重复响应的bug、新增漏洞报告、新增fuzz简报、增强JS提取规则、修复并发写入的问题
-
-V3.9.5：支持自动发现JS文件中引用的其他JS文件、递归下载所有相关的JS依赖
-
-V3.9.3：优化fuzz报告
-
-V3.9.2：修复还原sourcemap时出现的并发错误问题、将-v参数的路径漏洞扫描功能的规则放入到fuzzconfig.yaml中
-
-V3.9.0：支持Webpack反编译源码提取敏感信息等（js.map），需要安装sourcemap（安装命令：npm install --global reverse-sourcemap）
-
-V3.8.2：支持输入多个BaseDir进行fuzz测试，使用顿号隔离即可（例如：/api、/prod-api）
-
-V3.8.1：为了支持高度自定义，将敏感信息正则、JS前缀爆破字典全部放置在fuzzconfig.yaml配置文件中
-
-V3.8.0：新增敏感信息来源JS文件、增强JS文件搜集功能
-
-V3.7.5：修复map并发运行过程中的报错问题、优化fuzz报告布局问题
-
-V3.7.4：修复解析结果文件bufio.Scanner: token too long缓冲区溢出问题
-
-V3.7.3：新增-api参数，自动获取basedir（需存在路径C:\Program Files\Google\Chrome\Application\chrome.exe）、修复fuzznum参数：批量检测时，每个URL的精简接口数量阈值，超过该值则只对前N个接口进行检测，0表示无限制
-
-V3.7.1：优化bug
-
-V3.7.0：自定义fuzz规则：fuzz的配置信息fuzzconfig.yaml可自定义
-
-V3.6.3：修复fuzz报告的各种问题
-
-V3.6.0：使用AI进行JS代码审计并自动构造请求包进行测试
-
-V3.5.4：添加了两个参数
--filter int过滤重复响应的阈值，超过此数量的相同大小响应将被过滤 (default 6)
--fuzznum int批量检测时，每个URL的精简接口数量阈值，超过该值则跳过fuzz测试，0表示无限制
-
-V3.5.1：新增-t参数控制并发线程，不加参数默认50
-
-V3.5：支持批量URL扫描，优化报告模板
-
-V3.4：代码重构使用高并发线程，速度提升百分之50
-
-V3.3：修复扫描https的IP地址时证书错误问题
 ```
 
 
