@@ -1,12 +1,10 @@
 # JSSS-Findv6.5: 自动化JS提取与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 
 
-⚡工具获取：https://pc.fenchuan8.com/#/index?forum=99314
-
 更新记录
 
 ```
-v6.5: https://mp.weixin.qq.com/s/RnWxNulMoSsOptPaM_DP_g
+v6.5: https://mp.weixin.qq.com/s/WqRqWhd8J4khAsKJldwZeg
 
 v6.2: api_report.html报告中新增AI上下文理解功能，深度理解JavaScript代码片段，智能推断API参数和用法
 
