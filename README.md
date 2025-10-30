@@ -1,14 +1,19 @@
-# JSSS-Findv6.5: 自动化JS提取与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
+# JSSS-Findv7.0: 自动化JS提取与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
+<p align="center">
+  <strong>✨ 让JavaScript资产分析变得简单而强大 ✨</strong>
+</p>
+🚀 一款基于AI技术的JavaScript资产扫描与安全分析工具，专注于快速发现和评估Web应用的安全漏洞
 
+## 🎯 工具概述
+JSSS-Find 是一款专门用于JavaScript资产发现和安全分析的自动化工具。它通过智能爬取、深度解析和AI辅助分析，帮助安全研究人员快速识别Web应用中的潜在安全风险。
 
-更新记录
-
+重要功能更新记录
 ```
+v7.0: 支持联动Scanx自动化接口测试与漏洞测试、新增参数智能提取寻找高价值参数名并自动fuzz
+
 v6.5: https://mp.weixin.qq.com/s/WqRqWhd8J4khAsKJldwZeg
 
 v6.2: api_report.html报告中新增AI上下文理解功能，深度理解JavaScript代码片段，智能推断API参数和用法
-
-V6.1:  修复前缀JS下载重试的bug
 
 V6.0:  新增了「AI智能分析模式」,直接用AI分析复杂JS逻辑,自动构造出完整JS文件路径，告别手动拼接
 
@@ -18,129 +23,99 @@ V4.0： https://mp.weixin.qq.com/s/brZXggl989Kv3ywG_ZstxQ
 
 ```
 
+### 核心优势
 
-JSSS-Find 是一款用于自动化提取JS文件、API接口测试以及暴露端点检测的工具。通过访问指定URL，提取并分析JS文件中的接口、路径和敏感信息，帮助开发者发现潜在的安全漏洞。该工具支持对网站进行fuzz测试、漏洞检测、真实浏览器中访问Vue接口等功能。适用于安全研究人员和开发者进行漏洞检测与接口审计。
+| 特性             | 说明                                             |
+| ---------------- | ------------------------------------------------ |
+| 🤖 **AI驱动**     | 集成DeepSeek等AI模型，智能推断接口参数和安全风险 |
+| ⚡ **高效扫描**   | 多线程并发处理，支持大规模资产快速扫描           |
+| 🎨 **可视化报告** | 精美的HTML报告，支持交互式分析和数据导出         |
+| 🔧 **灵活配置**   | YAML配置文件，支持自定义扫描策略和测试规则       |
+| 📊 **多维度分析** | 接口提取、参数识别、敏感信息发现、漏洞检测       |
 
-✅提取JS
-![](https://github.com/kk12-30/JSSS-Find/blob/main/image.png)
-✅AI审计JS，自动化fuzz
-![](https://github.com/kk12-30/JSSS-Find/blob/main/ai1.png)
-![](https://github.com/kk12-30/JSSS-Find/blob/main/ai2.png)
-![](https://github.com/kk12-30/JSSS-Find/blob/main/ai3.png)
-✅fuzz测试，支持深度fuzz，自动构造接口
-![](https://github.com/kk12-30/JSSS-Find/blob/main/2.png)
-✅漏洞检测
-![](https://github.com/kk12-30/JSSS-Find/blob/main/3.png)
-✅Vue接口检测
-![](https://github.com/kk12-30/JSSS-Find/blob/main/4.png)
-✅结果保存到本地文件
-![](https://github.com/kk12-30/JSSS-Find/blob/main/1.png)
-✅报告生成
-![](https://github.com/kk12-30/JSSS-Find/blob/main/6.png)
+---
 
+## ⭐ 核心特性
 
-## 功能 ![Features Icon](https://img.shields.io/badge/Features-✔️-green)
+### 1. 全面的资产发现
 
-- **JS文件提取**：从网页内容中自动提取JS文件链接(适用Webpack框架)。
-- **接口路径提取**：支持精简和全量接口路径的提取，自动化识别JS中的接口路由。
-- **敏感信息提取**：提取JS文件中的敏感信息，如API密钥、JWT令牌、数据库凭证等。
-- **Fuzz测试**：对提取的接口路径进行fuzz测试、403bypass，发现潜在的漏洞。
-- **漏洞检测**：通过规则检测每个接口的常见漏洞，如Spring Actuator、Swagger未授权等。
-- **Vue接口检测**：在真实浏览器环境下测试Vue接口的状态码和标题。
-
-
-## 使用方法 🚀
-
-### 1. 提取JS文件并分析 📝
-
-#### 访问URL提取JS文件 🌐
-
-```bash
-JSSS-Find.exe -u <URL> [-fuzz] 
+```
+┌─────────────────────────────────────────────────────────┐
+│  JS文件爬取                                              │
+│  ├─ 递归抓取所有JS资源                                   │
+│  ├─ 支持sourcemap解析                                   │
+│  ├─ 智能去重和过滤                                       │
+│  └─ 多线程并发下载                                       │
+└─────────────────────────────────────────────────────────┘
 ```
 
--  `-u <URL>`: 指定需要提取JS文件和进行测试的URL。
--  `-uf url.txt`:从文件中批量读取URL进行测试，每行一个URL，可在URL后空格添加BaseDir。
--  `-fuzz`: 启用fuzz测试。
--  `-m` 使用深度fuzz模式，构造大量请求参数进行fuzz（使用方式-fuzz -m）
--  `-api` 自动获取basedir（需存在路径文件C:\Program Files\Google\Chrome\Application\chrome.exe）
--  `-bypass` 会对401/403请求进行绕过测试
--  `-v`: 启用漏洞检测模式，速度较慢。
--  `-vueBrowser`: 在真实浏览器环境中访问Vue接口。
+### 2. 智能接口提取
 
-#### 读取本地JS文件目录 📂
+- ✅ **正则模式**：精准匹配各种API路径格式
+- ✅ **Vue路由**：自动识别Vue Router配置
+- ✅ **React路由**：支持React Router解析
+- ✅ **RESTful API**：识别标准RESTful接口
+- ✅ **GraphQL**：支持GraphQL endpoint发现
 
-```bash
-JSSS-Find.exe -f <本地需要读取的JS目录> [-fuzz] [-v] [-vueBrowser]
+### 3. 敏感信息识别
+
+```
+📌 支持识别的敏感信息类型：
+├─ API密钥 (AWS/阿里云/腾讯云等)
+├─ 数据库凭证
+├─ 内网IP地址
+├─ 邮箱和手机号
+├─ 身份证号
+├─ JWT Token
+└─ 私钥和证书
 ```
 
-- `-f <本地JS目录>`: 指定本地目录，工具会自动分析该目录下的所有JS文件。
-- `可联动Packer-Fuzzer工具获取的js  该工具下载的js在tmp文件夹中`
-- `读取小程序反编译后的JS，获取敏感信息和接口`
+### 4. 参数智能提取 🔥
 
+支持**9种JavaScript参数提取场景**：
 
-### 2. 通过Cookie和Header进行请求 🍪
+| 场景     | 示例                                 | 提取能力         |
+| -------- | ------------------------------------ | ---------------- |
+| 对象属性 | `const user = { userId: 123 }`       | ✅ userId         |
+| 解构赋值 | `const {id, name} = user`            | ✅ id, name       |
+| 嵌套解构 | `const {profile: {email}} = data`    | ✅ email, profile |
+| 函数参数 | `function getUser(userId, token)`    | ✅ userId, token  |
+| 变量赋值 | `const apiKey = "xxx"`               | ✅ apiKey         |
+| API请求  | `axios.post('/api', {name: "test"})` | ✅ name           |
+| URL参数  | `/api?page=1&size=10`                | ✅ page, size     |
+| 配置对象 | `config: { timeout: 5000 }`          | ✅ timeout        |
+| 路由参数 | `/user/:userId/profile`              | ✅ userId         |
 
-#### 设置自定义的Cookie和Headers 🔑
+### 5. 自动化Fuzz测试
 
-```bash
-JSSS-Find.exe -u <URL> -cookie "SESSIONID=abcd" -header "Token:abc;User-Agent:MyUA"
-```
+- HTTP方法测试（GET/POST/PUT/DELETE/PATCH/HEAD/OPTIONS）
+- 参数化请求（自动填充参数）
+- 深度Fuzz（路径组合测试）
+- 403/401绕过测试
 
-- `-cookie`: 设置自定义Cookie。
-- `-header`: 设置自定义请求Headers。
+### 6. 漏洞检测插件
 
-### 3. 保存和查看结果 💾
+- 🔓 未授权访问检测
+- 💉 SQL注入检测
+- 🐚 命令执行检测
+- 📜 XSS检测
+- 📂 路径遍历检测
+- 🔍 敏感文件检测
 
-工具会在指定的目录中保存提取结果，包括：
+## 📝 总结
 
-- `精简正则接口提取.txt`
-- `全量正则接口提取.txt`
-- `敏感信息提取.txt`
-- `fuzz_success.txt` (仅在启用fuzz时生成)
-- `vuln_result.txt` (仅在启用漏洞检测时生成)
-- `vue_browser_result.txt` (仅在启用Vue浏览器检测时生成)
+JSSS-Find是一款功能强大的JavaScript资产扫描与分析工具，其核心优势在于：
 
-## 示例 ⚡
+1. **🤖 AI驱动的智能分析**：自动推断接口参数、生成测试用例、评估安全风险
+2. **🧩 9种参数提取场景**：全面覆盖JavaScript中的各种参数使用方式
+3. **🔍 智能过滤与评分**：10级过滤机制+参数评分，精准识别高价值参数
+4. **📊 可视化报告**：精美的HTML报告，支持交互式分析和数据导出
+5. **⚡ 自动化测试**：集成Fuzz测试和漏洞检测，一站式安全评估
 
-```bash
-JSSS-Find.exe -u https://example.com -fuzz -t 10
-```
-上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz测试、并发速率为10（过大并发可能导致系统崩溃、触发waf等后果）
+**适用人群**：
 
-```bash
-JSSS-Find.exe -u https://example.com -fuzz -m -t 10
-```
-上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz深度测试
-
-```bash
-JSSS-Find.exe -ai -clean -u https://example.com
-```
-上述命令会从 `https://example.com` 提取JS文件、进行AI分析
-
-```bash
-JSSS-Find.exe -u https://example.com -fuzz -bypss
-```
-上述命令会从 `https://example.com` 提取JS文件、进行接口fuzz测试、对403/401请求进行bypass
-
-```bash
-JSSS-Find.exe -u https://example.com -vue
-```
-上述命令会从 `https://example.com` 提取JS文件、进行vue测试
-
-```bash
-JSSS-Find.exe -u https://example.com -v
-```
-上述命令会从 `https://example.com` 提取JS文件、进行漏洞测试
-
-```bash
-JSSS-Find-AI.exe -ai -clean -url https://example.com/ JS的具体路径
-```
-上述命令会从指定文件夹中分析JS
-
-```bash
-JSSS-Find-AI.exe -ai -fuzz -clean -url https://example.com/ JS的具体路径
-```
-上述命令会从指定文件夹中分析JS，并根据 `https://example.com` 构造请求
-
-
+- 渗透测试工程师
+- 安全研究人员
+- SRC漏洞挖掘者
+- 红蓝对抗人员
+- Web安全爱好者
