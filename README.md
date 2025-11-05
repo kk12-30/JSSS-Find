@@ -1,4 +1,4 @@
-# JSSS-Findv7.0: 智能JS资产扫描与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
+# JSSS-Findv7.6: 智能JS资产扫描与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 <p align="center">
   <strong>✨ 让JavaScript资产分析变得简单而强大 ✨</strong>
 </p>
@@ -9,6 +9,12 @@ JSSS-Find 是一款专门用于JavaScript资产发现和安全分析的自动化
 
 重要功能更新记录
 ```
+v7.5: -uu参数多URL扫描，以第一个URL为基准进行后续测试保证一致性，适用于前后端分离系统的测试
+
+v7.4: -fd参数接口发现功能，启用接口发现模式，检测接口响应中的HTML/JS资源并二次爬取，适用于Vue的测试
+
+v7.3: -det参数POC探测扫描
+
 v7.0: 支持联动Scanx自动化接口测试与漏洞测试、新增参数智能提取寻找高价值参数名并自动fuzz
 
 v6.5: https://mp.weixin.qq.com/s/WqRqWhd8J4khAsKJldwZeg
@@ -18,8 +24,6 @@ v6.2: api_report.html报告中新增AI上下文理解功能，深度理解JavaSc
 V6.0:  新增了「AI智能分析模式」,直接用AI分析复杂JS逻辑,自动构造出完整JS文件路径，告别手动拼接
 
 V5.0:  https://mp.weixin.qq.com/s/AVyjVG0PZfZ5n-Ddv__q1g
-
-V4.0： https://mp.weixin.qq.com/s/brZXggl989Kv3ywG_ZstxQ
 
 ```
 
