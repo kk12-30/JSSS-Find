@@ -4,6 +4,8 @@
 </p>
 🚀 一款基于AI技术的JavaScript资产扫描与安全分析工具，专注于快速发现和评估Web应用的安全漏洞
 
+https://wiki.freebuf.com/good/goodDetail?id=83
+
 ## 🎯 工具概述
 JSSS-Find 是一款专门用于JavaScript资产发现和安全分析的自动化工具。它通过智能爬取、深度解析和AI辅助分析，帮助安全研究人员快速识别Web应用中的潜在安全风险。
 
