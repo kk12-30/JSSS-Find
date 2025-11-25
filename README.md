@@ -11,6 +11,8 @@ JSSS-Find 是一款专门用于JavaScript资产发现和安全分析的自动化
 
 重要功能更新记录
 ```
+v8.3:  支持解析wsdl接口并测试
+
 v8.1:  支持解析swagger接口并测试、优化HTML报告 
 
 v8.0:  支持sock代理、支持User-Agent轮询反爬虫机制、支持vite框架提取，优化参数名提取
