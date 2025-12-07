@@ -1,4 +1,4 @@
-# JSSS-Findv8.1: 智能JS资产扫描与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
+# JSSS-Findv8.6: 智能JS资产扫描与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 <p align="center">
   <strong>✨ 让JavaScript资产分析变得简单而强大 ✨</strong>
 </p>
@@ -11,6 +11,8 @@ JSSS-Find 是一款专门用于JavaScript资产发现和安全分析的自动化
 
 重要功能更新记录
 ```
+v8.6： 
+
 v8.3:  支持解析wsdl接口并测试
 
 v8.1:  支持解析swagger接口并测试、优化HTML报告 
