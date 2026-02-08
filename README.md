@@ -1,4 +1,4 @@
-# JSSS-Findv8.6: 智能JS资产扫描与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
+# JSSS-Findv9.0: 智能JS资产扫描与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 <p align="center">
   <strong>✨ 让JavaScript资产分析变得简单而强大 ✨</strong>
 </p>
@@ -10,8 +10,8 @@ https://wiki.freebuf.com/good/goodDetail?id=83
 JSSS-Find 是一款专门用于JavaScript资产发现和安全分析的自动化工具。它通过智能爬取、深度解析和AI辅助分析，帮助安全研究人员快速识别Web应用中的潜在安全风险。
 
 重要功能更新记录
-```
-v8.8 
+``` 
+v9.0： 新增web界面 
 
 v8.3:  支持解析wsdl接口并测试
 
