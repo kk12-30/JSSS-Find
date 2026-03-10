@@ -1,4 +1,4 @@
-# JSSS-Findv9.0: 智能JS资产扫描与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
+# JSSS-Findv9.1: 智能JS资产扫描与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 <p align="center">
   <strong>✨ 让JavaScript资产分析变得简单而强大 ✨</strong>
 </p>
@@ -10,32 +10,52 @@ https://wiki.freebuf.com/good/goodDetail?id=83
 JSSS-Find 是一款专门用于JavaScript资产发现和安全分析的自动化工具。它通过智能爬取、深度解析和AI辅助分析，帮助安全研究人员快速识别Web应用中的潜在安全风险。
 
 重要功能更新记录
-``` 
-v9.0： 新增web界面 
-
-v8.3:  支持解析wsdl接口并测试
-
-v8.1:  支持解析swagger接口并测试、优化HTML报告 
-
-v8.0:  支持sock代理、支持User-Agent轮询反爬虫机制、支持vite框架提取，优化参数名提取
-
-v7.7:  -scanxfuzz(scanx接口测试) -scanxvul(scanx漏洞测试) 
-
-v7.5: -uu参数多URL扫描，以第一个URL为基准进行后续测试保证一致性，适用于前后端分离系统的测试
-
-v7.4: -fd参数接口发现功能，启用接口发现模式，检测接口响应中的HTML/JS资源并二次爬取，适用于Vue的测试
-
-v7.3: -det参数POC探测扫描
-
-v7.0: 支持联动Scanx自动化接口测试与漏洞测试、新增参数智能提取寻找高价值参数名并自动fuzz
-
-v6.5: https://mp.weixin.qq.com/s/WqRqWhd8J4khAsKJldwZeg
-
-v6.2: api_report.html报告中新增AI上下文理解功能，深度理解JavaScript代码片段，智能推断API参数和用法
-
-V6.0:  新增了「AI智能分析模式」,直接用AI分析复杂JS逻辑,自动构造出完整JS文件路径，告别手动拼接
-
-V5.0:  https://mp.weixin.qq.com/s/AVyjVG0PZfZ5n-Ddv__q1g
+```
+v9.1
+新增报告合并能力，实现多维度报告整合管理
+新增 HTML 链接提取功能，拓展资源探测覆盖维度
+v9.0
+全新上线 Web 可视化操作界面，优化人机交互体验
+v8.3
+新增 WSDL 接口解析能力，支持该类型接口的自动化检测与测试
+v8.1
+新增 Swagger 接口解析及自动化测试能力
+优化 HTML 格式报告，升级内容呈现与信息完整性
+v8.0
+新增 SOCK 代理、User-Agent 轮询反爬虫机制，适配复杂测试环境
+新增 Vite 框架接口提取支持，精准适配主流前端框架
+优化参数名提取逻辑，提升参数识别精准度与效率
+v7.7
+新增-scanxfuzz参数，实现 Scanx 引擎接口自动化测试
+新增-scanxvul参数，实现 Scanx 引擎漏洞自动化检测
+v7.5
+新增-uu多 URL 扫描参数，以首个 URL 为基准保障测试一致性
+针对性适配前后端分离系统的一体化测试场景
+v7.4
+新增-fd接口发现参数，启用专属接口发现模式
+支持检测接口响应中 HTML/JS 资源并二次深度爬取，适配 Vue 框架测试
+v7.3
+新增-det参数，实现 POC 化漏洞快速探测与扫描
+v7.0
+实现与 Scanx 工具深度联动，打通自动化接口测试与漏洞测试流程
+新增参数智能提取功能，精准挖掘高价值参数并自动执行 Fuzz 测试
+v6.5
+新增 AI 接口上下文分析，自动解析接口调用栈、参数及权限逻辑
+新增 AI 路由风险分析，智能评估接口风险等级并优先级排序
+新增独立 JSMap 分析模块，支持源码级静态审计、敏感信息挖掘及静态接口提取
+v6.2
+升级api_report.html报告能力，新增 AI 上下文理解功能
+支持深度解析 JavaScript 代码片段，智能推断 API 参数及使用方法
+v6.0
+全新上线「AI 智能分析模式」，深度理解复杂前端 JS 工程化逻辑
+实现完整 JS 文件路径自动构造，替代手动拼接，降低误报率
+支持接口深度递归挖掘，提升隐蔽资产探测能力
+v5.0
+搭建工具核心能力底座，实现四大基础功能：
+① 深度 JS 接口提取，精准抓取动态 / 打包接口
+② 智能登录模拟，适配复杂验证流程
+③ 多插件安全检测，实现浏览式实时测试
+④ 自动化 Fuzz 测试，多维度排查潜在漏洞
 
 ```
 
