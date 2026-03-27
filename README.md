@@ -1,4 +1,4 @@
-# JSSS-Findv10: 智能JS资产扫描与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
+# JSSS-Findv10.0: 智能JS资产扫描与测试工具 ![JSSS-Find Logo](https://img.shields.io/badge/Project-JSSS--Find-blue)
 <p align="center">
   <strong>✨ 让JavaScript资产分析变得简单而强大 ✨</strong>
 </p>
